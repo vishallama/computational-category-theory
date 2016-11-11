@@ -48,3 +48,14 @@ of constructing categories rather than explicitly encoding them. Comma
 categories can be used for computations on structures such as graphs. And, we
 use duality to convert programs computing colimits to those computing limits.
 
+## Applications of the categorical approach
+
+One has to really understand a task to abstract it in a categorical framework.
+Two interesting applications are: A general unification algorithm using
+coequalizers, which specializes to known unification algorithms, and a
+categorical implementation of the specification constructing operations in the
+language Clear.
+
+Category theory can also be used to explicate aspects of the theory of
+computation, in particular, the semantics of programming languages.
+
