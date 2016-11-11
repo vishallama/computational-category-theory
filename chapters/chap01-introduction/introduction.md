@@ -33,3 +33,18 @@ structure, a sort of natural mathematical unfolding of the main language
 concepts as opposed to a computer science evolution of them by trial and error
 of language designers.
 
+## How to represent categories in SML
+
+A naive approach would be to use a list of objects and a list of arrows to
+represent a category, but this approach would let us model only finite
+categories. Instead, we could use a functional representation in which the
+class of objects and that of arrows are types in SML, which allows us to
+represent infinite categories.
+
+We use higher-order functions to represent universal properties. The programs
+derived from categorical constructions are parameterized on categories. In
+order to apply the programs to a range of categories, we need systematic ways
+of constructing categories rather than explicitly encoding them. Comma
+categories can be used for computations on structures such as graphs. And, we
+use duality to convert programs computing colimits to those computing limits.
+
