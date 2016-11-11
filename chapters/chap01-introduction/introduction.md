@@ -14,3 +14,13 @@ category theory as a collection of algorithms. These algorithms are general in
 the sense that they are parameterized over an arbitrary category and so can be
 specialized to different data structures.
 
+## The relationship of the mathematics to SML code
+
+  1. Categorical concepts are represented as types in SML.
+  2. Constructive proofs of theorems in category theory become SML programs.
+
+For instance, the theorem that if a category has an initial object and pushouts
+then it has finite colimits yields an iterative algorithm for constructing the
+colimiting cocone of a finite diagram, starting with the initial object and
+using the pushout at each iteration.
+
