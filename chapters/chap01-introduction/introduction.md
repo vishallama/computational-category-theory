@@ -24,3 +24,12 @@ then it has finite colimits yields an iterative algorithm for constructing the
 colimiting cocone of a finite diagram, starting with the initial object and
 using the pushout at each iteration.
 
+## Categorical Programming Language
+
+Tatsuya Hagino created a new language for programming and specification based
+on adjoints. It is very much like in SML, almost identical in its expressive
+power, but uses fewer primitive notions, and hence, has a more rational
+structure, a sort of natural mathematical unfolding of the main language
+concepts as opposed to a computer science evolution of them by trial and error
+of language designers.
+
