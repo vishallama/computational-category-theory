@@ -30,3 +30,12 @@ fun even(zero) = true
 fun add(zero, n) = n
   | add(succ(m), n) = succ(add(m, n))
 
+(* list processing functions *)
+fun length nil = 0
+  | length (_ :: t) = 1 + length t
+
+fun member(e, nil) = false
+  | member(e, h :: t) = if e = h
+                        then true
+                        else member(e, t)
+
