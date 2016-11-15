@@ -20,3 +20,13 @@ datatype Plant = flower of string * int * Color
 fun height(flower(_, n, _)) = n
   | height(foliage(_, n)) = n
 
+(* Define Peano's natural numbers *)
+datatype Num = zero
+             | succ of Num
+
+fun even(zero) = true
+  | even(succ(n)) = not(even(n))
+
+fun add(zero, n) = n
+  | add(succ(m), n) = succ(add(m, n))
+
