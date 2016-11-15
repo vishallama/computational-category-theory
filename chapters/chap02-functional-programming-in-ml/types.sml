@@ -13,3 +13,10 @@ fun warm'(x) =
      | blue => false
      | green => false
 
+(* Type definition with non-constant data constructors *)
+datatype Plant = flower of string * int * Color
+               | foliage of string * int
+
+fun height(flower(_, n, _)) = n
+  | height(foliage(_, n)) = n
+
